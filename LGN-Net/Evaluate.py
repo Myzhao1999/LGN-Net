@@ -28,7 +28,7 @@ import glob
 
 import argparse
 import scipy.io as scio
-#Evaluate.py --method recon --t_length 1 --alpha 0.7 --th 0.015 --dataset_type ped2 --model_dir your_model.pth --m_items_dir your_m_items.pt
+
 
 
 
@@ -44,7 +44,7 @@ parser.add_argument('--t_length', type=int, default=5, help='length of the frame
 parser.add_argument('--fdim', type=int, default=512, help='channel dimension of the features')
 parser.add_argument('--mdim', type=int, default=512, help='channel dimension of the memory items')
 parser.add_argument('--msize', type=int, default=10, help='number of the memory items')
-parser.add_argument('--alpha', type=float, default=0.6, help='weight for the anomality score')   #  loss=1, 1 :0.7->AUC:  88.10  # 0.8+th==0.01-->88.14  0.8+th==0.001-> 88.03
+parser.add_argument('--lambda', type=float, default=0.6, help='weight for the anomality score')   
 parser.add_argument('--gamma', type=float, default=0.009, help='threshold for test updating')
 parser.add_argument('--num_workers', type=int, default=2, help='number of workers for the train loader')
 parser.add_argument('--num_workers_test', type=int, default=1, help='number of workers for the test loader')
@@ -162,7 +162,7 @@ for video in sorted(videos_list):
     video_name = video.split('/')[-1]
 
     anomaly_score_total_list += score_sum(anomaly_score_list(psnr_list[video_name]), 
-                                    anomaly_score_list_inv(feature_distance_list[video_name]), args.alpha)
+                                    anomaly_score_list_inv(feature_distance_list[video_name]), args.lambda)
 
 # mean psnr
 a=-1
