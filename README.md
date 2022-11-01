@@ -108,9 +108,9 @@ Descriptions of testing parameters are as follows:
 
 ## Pretrained Models
 You can download the pretrained models.
-- [Pretrained model for UCSD Ped2]()
-- [Pretrained model for CUHK Avenue]()
-- [Pretrained model for ShanghaiTech]()
+- [Pretrained model for UCSD Ped2](https://drive.google.com/drive/folders/1vdg4i7XMtfNEfaCdBS1poqRzmIDO7i9O?usp=sharing)
+- [Pretrained model for CUHK Avenue](https://drive.google.com/drive/folders/1vdg4i7XMtfNEfaCdBS1poqRzmIDO7i9O?usp=sharing)
+- [Pretrained model for ShanghaiTech](https://drive.google.com/drive/folders/1vdg4i7XMtfNEfaCdBS1poqRzmIDO7i9O?usp=sharing)
 
 Note that, you should set the correct lambda and gamma values  for different datasets. See more details in the paper.
 ## Citation
@@ -120,6 +120,7 @@ If you find this work useful in your research, please cite the paper:
 }
 ```
 ## References
+Thanks for their excellent work~
 @inproceedings{park2020learning,
   title={Learning Memory-guided Normality for Anomaly Detection},
   author={Park, Hyunjong and Noh, Jongyoun and Ham, Bumsub},
@@ -127,6 +128,7 @@ If you find this work useful in your research, please cite the paper:
   pages={14372--14381},
   year={2020}
 }
+
 @inproceedings{lee2021video,
   title={Video Prediction Recalling Long-term Motion Context via Memory Alignment Learning},
   author={Lee, Sangmin and Kim, Hak Gu and Choi, Dae Hwi and Kim, Hyung-Il and Ro, Yong Man},
