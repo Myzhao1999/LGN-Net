@@ -121,6 +121,8 @@ If you find this work useful in your research, please cite the paper:
 ```
 ## References
 Thanks for their excellent work~
+
+
 @inproceedings{park2020learning,
   title={Learning Memory-guided Normality for Anomaly Detection},
   author={Park, Hyunjong and Noh, Jongyoun and Ham, Bumsub},
@@ -128,6 +130,8 @@ Thanks for their excellent work~
   pages={14372--14381},
   year={2020}
 }
+
+
 
 @inproceedings{lee2021video,
   title={Video Prediction Recalling Long-term Motion Context via Memory Alignment Learning},
