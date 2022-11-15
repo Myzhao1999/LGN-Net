@@ -7,9 +7,9 @@
 
 > 
 This repository contains the official PyTorch implementation of the following paper:
-> **Learning Spatiotemporal Representation Augmented Normality for Video Anomaly Detection (Submitted in IEEE Transactions on Circuits and Systems for Video Technology (TCSVT))**<br>
-> Mengyang Zhao, Yang Liu, Xinhua Zeng<br>
-> Paper: https://arxiv.org/abs/<br>
+> **LGN-Net: Local-Global Normality Network for Video Anomaly Detection (Submitted in IEEE Transactions on Circuits and Systems for Video Technology (TCSVT))**<br>
+> Mengyang Zhao, Yang Liu, Jing Liu, Di Li, Xinhua Zeng<br>
+> Paper:[ https://arxiv.org/abs/](https://arxiv.org/abs/2211.07454)<br>
 > 
 > **Abstract** *Video anomaly detection (VAD) has been intensively studied for years because of its potential applications in intelligent video systems. Existing unsupervised VAD methods tend to learn normality from training sets consisting of only normal videos and regard instances deviating from such normality as anomalies. However, they often consider only local or global normality. Some of them focus on learning local spatiotemporal representations from consecutive frames in video clips to enhance the representation for normal events. But powerful representation allows these methods to represent some anomalies and causes missed detections. In contrast, the other methods are devoted to memorizing global prototypical patterns of whole training videos to weaken the generalization for anomalies, which also restricts them to represent diverse normal patterns and causes false alarms. To this end, we propose a two-branch model, Local-Global Normality Network (LGN-Net), to learn local and global normality simultaneously. Specifically, one branch learns the evolution regularities of appearance and motion from consecutive frames as local normality utilizing a spatiotemporal prediction network, while the other branch memorizes prototype features of the whole videos as global normality by a memory module. LGN-Net achieves a balance of representing normal and abnormal instances by fusing local and global normality. The fused normality enables our model more generalized to various scenes compared to exploiting single normality. Experiments demonstrate the effectiveness and superior performance of our method. The code is available online: \href{https://github.com/Myzhao1999/LGN-Net}{https://github.com/Myzhao1999/LGN-Net}.*
 
@@ -99,8 +99,14 @@ Note that, you should set the correct lambda and gamma values  for different dat
 ## Citation
 If you find this work useful in your research, please cite the paper:
 ```
-@inproceedings{
+
+@article{kingma2014adam,
+  title={LGN-Net: Local-Global Normality Network for Video Anomaly Detection},
+  author={Mengyang Zhao, Yang Liu, Jing Liu, Di Li, Xinhua Zeng},
+  journal={arXiv preprint arXiv:2211.07454},
+  year={2022}
 }
+
 ```
 ## References
 Thanks for their excellent work~
@@ -119,8 +125,6 @@ author={Wang, Yunbo and Wu, Haixu and Zhang, Jianjin and Gao, Zhifeng and Wang, 
 journal={{IEEE} Trans. Pattern Anal. Mach. Intell.},   
 title={PredRNN: A Recurrent Neural Network for Spatiotemporal Predictive Learning},  
 year={2022},  
-volume={},  
-number={},  
 pages={1-1}
 }
 
