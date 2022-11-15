@@ -2,7 +2,7 @@
 ## LGN-Net: Local-Global Normality Network for Video Anomaly Detection
 
 
-<div align="center"><img width="98%" src="https://github.com/Myzhao1999/LGN-Net/blob/main/lgn.pdf" /></div>
+<div align="center"><img width="98%" src="https://github.com/Myzhao1999/LGN-Net/blob/main/lgn.png" /></div>
 
 
 > 
