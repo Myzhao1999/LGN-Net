@@ -1,8 +1,8 @@
 # LGN-Net
-## Learning Spatiotemporal Representation Augmented Normality for Video Anomaly Detection
+## LGN-Net: Local-Global Normality Network for Video Anomaly Detection
 
 
-<div align="center"><img width="98%" src="https://github.com/Myzhao1999/SRAN-Net/blob/main/SRAN-Net.png" /></div>
+<div align="center"><img width="98%" src="https://github.com/Myzhao1999/LGN-Net/blob/main/LGN-Net.png" /></div>
 
 
 > 
@@ -11,24 +11,7 @@ This repository contains the official PyTorch implementation of the following pa
 > Mengyang Zhao, Yang Liu, Xinhua Zeng<br>
 > Paper: https://arxiv.org/abs/<br>
 > 
-> **Abstract** *Video anomaly detection (VAD) has been intensively studied because of its 
->potential to be used in intelligent video systems. In recent years, many unsupervised VAD 
->methods have been proposed, which usually learn normal patterns and consider the instances
-> that deviate from such patterns as anomalies. These methods usually tend to memorize the 
->normal patterns in the global training videos or tend to learn local evolution regularities 
->of input video clips. However, almost no methods are able to focus on both local and global 
->features of training videos, which causes these models to have difficulty balancing their 
->representation capability for normal patterns and abnormal patterns. To address this issue,
-> we propose to take into account both local spatiotemporal representations and global normal 
->prototype features of training videos and enhance the learned normality utilizing local 
->spatiotemporal representations. Specifically, we devise a two-branch model, in which one
-> branch learns the local appearance and motion evolution regularities in current input
-> video clips, and the other branch memorizes global normal prototype features of the
-> whole training videos.  Experiments on standard benchmarks demonstrate the effectiveness 
->of our proposed method, which boosts the model's capability for representing complex normal
-> patterns while limiting the representation capability for abnormal instances. Our method 
->achieves competitive performance compared with the state-of-the-art
-> methods with AUCs of 97.1\%, 89.3\%, and 73.0\% on the UCSD Ped2, CUHK Avenue, and ShanghaiTech, respectively.*
+> **Abstract** *Video anomaly detection (VAD) has been intensively studied for years because of its potential applications in intelligent video systems. Existing unsupervised VAD methods tend to learn normality from training sets consisting of only normal videos and regard instances deviating from such normality as anomalies. However, they often consider only local or global normality. Some of them focus on learning local spatiotemporal representations from consecutive frames in video clips to enhance the representation for normal events. But powerful representation allows these methods to represent some anomalies and causes missed detections. In contrast, the other methods are devoted to memorizing global prototypical patterns of whole training videos to weaken the generalization for anomalies, which also restricts them to represent diverse normal patterns and causes false alarms. To this end, we propose a two-branch model, Local-Global Normality Network (LGN-Net), to learn local and global normality simultaneously. Specifically, one branch learns the evolution regularities of appearance and motion from consecutive frames as local normality utilizing a spatiotemporal prediction network, while the other branch memorizes prototype features of the whole videos as global normality by a memory module. LGN-Net achieves a balance of representing normal and abnormal instances by fusing local and global normality. The fused normality enables our model more generalized to various scenes compared to exploiting single normality. Experiments demonstrate the effectiveness and superior performance of our method. The code is available online: \href{https://github.com/Myzhao1999/LGN-Net}{https://github.com/Myzhao1999/LGN-Net}.*
 
 ## Preparation
 
@@ -131,7 +114,15 @@ Thanks for their excellent work~
   year={2020}
 }
 
-
+@ARTICLE{wang2021predrnn,  
+author={Wang, Yunbo and Wu, Haixu and Zhang, Jianjin and Gao, Zhifeng and Wang, Jianmin and Yu, Philip and Long, Mingsheng}, 
+journal={{IEEE} Trans. Pattern Anal. Mach. Intell.},   
+title={PredRNN: A Recurrent Neural Network for Spatiotemporal Predictive Learning},  
+year={2022},  
+volume={},  
+number={},  
+pages={1-1}
+}
 
 @inproceedings{lee2021video,
   title={Video Prediction Recalling Long-term Motion Context via Memory Alignment Learning},
