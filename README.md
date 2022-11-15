@@ -109,7 +109,7 @@ If you find this work useful in your research, please cite the paper:
 
 ```
 ## References
-Thanks for their excellent work~
+Thanks for their excellent work and related code.
 
 
 @inproceedings{park2020learning,
