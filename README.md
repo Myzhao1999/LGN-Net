@@ -100,7 +100,7 @@ Note that, you should set the correct lambda and gamma values  for different dat
 If you find this work useful in your research, please cite the paper:
 ```
 
-@article{kingma2014adam,
+@article{arXiv:2211.07454,
   title={LGN-Net: Local-Global Normality Network for Video Anomaly Detection},
   author={Mengyang Zhao, Yang Liu, Jing Liu, Di Li, Xinhua Zeng},
   journal={arXiv preprint arXiv:2211.07454},
